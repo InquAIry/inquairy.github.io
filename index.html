@@ -95,9 +95,9 @@
     <nav>
       <a href="#features">Features</a>
       <a href="#faq">FAQ</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#stories">Stories</a>
+      <a href="#stories">Reviews</a>
       <a href="#contact">Contact</a>
+      <a href="#pricing">Pricing</a>
     </nav>
   </header>
 
@@ -129,75 +129,285 @@
     </div>
   </section>
 
-  <section id="faq">
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq">
-      <div class="card">
-        <h3>What makes InquAIry different from other AI tools?</h3>
-        <p>InquAIry uses domain-specific knowledge and RAG to ensure trustworthy answers for educational and enterprise users.</p>
-      </div>
-      <div class="card">
-        <h3>Can I use InquAIry for multiple subjects?</h3>
-        <p>Yes, you can customize the knowledge base for different academic or training domains.</p>
-      </div>
-      <div class="card">
-        <h3>Does it support mobile devices?</h3>
-        <p>Absolutely! InquAIry can be accessed via web, mobile, and integrated into messaging apps.</p>
+
+<!-- # -->
+<section id="stories"></section>
+  <h2 style="text-align: center; color: #1a3c74;">Reviews & User Stories</h2>
+  <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; padding-top: 2rem;">
+
+
+    <!-- Card Summary -->
+    <div class="card" style="flex: 1 1 300px; max-width: 360px; min-height: 200px; display: flex; flex-direction: column; justify-content: space-between; background-color: #ffffff; border-left: 5px solid #1a3c74; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.06);">
+      <div class="stars" style="color:#f4d35e; font-size:1.2rem;">★★★★★</div>
+      <p style="margin: 0.5rem 0; font-style: italic; color: #444;">"We needed a scalable way to support new hires without overwhelming our HR staff."</p>
+      <div class="user-name" style="font-weight:bold; color:#1a3c74;">Alex, 38</div>
+      <div class="user-role" style="font-size: 0.9rem; color: #666;">Corporate L&D Manager</div>
+      <button onclick="document.getElementById('modal-alex').style.display='block'" style="margin-top: 1rem; background-color: #1a3c74; color: white; border: none; padding: 0.5rem 1rem; border-radius: 5px; cursor: pointer;">View Full Story</button>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal-alex" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.5); z-index:1000;">
+      <div style="background:#fff; max-width:550px; margin:5% auto; padding:2rem; border-radius:10px; position:relative;">
+        <span onclick="document.getElementById('modal-alex').style.display='none'" style="position:absolute; top:10px; right:15px; font-size:1.2rem; cursor:pointer;">&times;</span>
+
+        <!-- Detailed Content -->
+        <div style="font-size: 1.25rem; font-weight: bold; color: #1a3c74;">💼 Alex, 38</div>
+        <div style="color: #1a1a1a; font-weight: 600;">Corporate L&D Manager</div>
+        <p style="margin-top: 0.5rem; font-style: italic; color: #444;">"We needed a scalable way to support new hires without overwhelming our HR staff."</p>
+
+        <div style="margin-top: 1rem;">
+          <strong style="color:#1a3c74;">Pain Points</strong>
+          <ul style="margin: 0.3rem 0 0 1.2rem; color: #1a1a1a;">
+            <li>❌ HR answers repetitive questions manually</li>
+            <li>❌ E-learning platform lacks interaction</li>
+          </ul>
+        </div>
+
+        <div style="margin-top: 1rem;">
+          <strong style="color:#1a3c74;">Why InquAIry?</strong>
+          <ul style="margin: 0.3rem 0 0 1.2rem; color: #1a1a1a;">
+            <li>✅ Custom company knowledge base</li>
+            <li>✅ 24/7 chatbot on Slack / LINE / Teams</li>
+            <li>✅ Offers onboarding consultation & support</li>
+          </ul>
+          <strong style="color:#1a3c74;">Full Story</strong>
+          <p style="margin-top: 1rem; color: #1a1a1a; line-height: 1.6;">
+            As the Corporate Learning & Development Manager, Alex oversees training for new hires across multiple departments.
+            The HR team was overwhelmed by repetitive onboarding questions and lacked an interactive platform.
+            After implementing InquAIry with Slack integration and a company-specific knowledge base, he significantly reduced HR workload,
+            improved onboarding consistency, and boosted training satisfaction among employees.
+          </p>
+        </div>
       </div>
     </div>
-  </section>
+</section>
 
-  <section id="reviews">
-    <h2>User Reviews</h2>
-    <div class="reviews">
-      <div class="card">
-        <div class="stars">★★★★★</div>
-        <p>InquAIry saved me hours of course prep every week. It’s like having a 24/7 assistant!</p>
-        <div class="user-name">Dr. Huang</div>
-        <div class="user-role">Marketing Professor, NTU</div>
+<!-- Card: Dr. Bob Lin -->
+  <div class="card" style="flex: 1 1 300px; max-width: 360px; min-height: 200px; display: flex; flex-direction: column; justify-content: space-between; background-color: #ffffff; border-left: 5px solid #1a3c74; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.06);">
+  <div class="stars" style="color:#f4d35e; font-size:1.2rem;">★★★★★</div>
+  <p style="margin: 0.5rem 0; font-style: italic; color: #444;">"InquAIry helped my students find answers even outside class hours."</p>
+  <div class="user-name" style="font-weight:bold; color:#1a3c74;">Dr. Bob Lin, 47</div>
+  <div class="user-role" style="font-size: 0.9rem; color: #666;">University Educator</div>
+  <button onclick="document.getElementById('modal-bob').style.display='block'" style="margin-top: 1rem; background-color: #1a3c74; color: white; border: none; padding: 0.5rem 1rem; border-radius: 5px; cursor: pointer;">View Full Story</button>
+</div>
+
+<!-- Modal: Bob -->
+<div id="modal-bob" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.5); z-index:1000;">
+  <div style="background:#fff; max-width:550px; margin:5% auto; padding:2rem; border-radius:10px; position:relative;">
+    <span onclick="document.getElementById('modal-bob').style.display='none'" style="position:absolute; top:10px; right:15px; font-size:1.2rem; cursor:pointer;">&times;</span>
+    <div style="font-size: 1.25rem; font-weight: bold; color: #1a3c74;">👨‍🏫 Dr. Bob Lin, 47</div>
+    <div style="color: #1a1a1a; font-weight: 600;">University Educator</div>
+    <p style="margin-top: 0.5rem; font-style: italic; color: #444;">"InquAIry helped my students find answers even outside class hours."</p>
+    <div style="margin-top: 1rem;">
+      <strong style="color:#1a3c74;">Pain Points</strong>
+      <ul style="margin: 0.3rem 0 0 1.2rem; color: #1a1a1a;">
+        <li>❌ No TA support in some semesters</li>
+        <li>❌ General AI tools misalign with course content</li>
+      </ul>
+    </div>
+    <div style="margin-top: 1rem;">
+      <strong style="color:#1a3c74;">Why InquAIry?</strong>
+      <ul style="margin: 0.3rem 0 0 1.2rem; color: #1a1a1a;">
+        <li>✅ Aligns with textbooks and slides</li>
+        <li>✅ Helps students self-learn via guided Q&A</li>
+        <li>✅ No extra cost — school provides access</li>
+      </ul>
+      <strong style="color:#1a3c74;">Full Story</strong>
+      <p style="margin-top: 1rem; color: #1a1a1a; line-height: 1.6;">
+        Bob teaches foundational marketing to 150+ students. Some semesters had no TA, making it hard to support all students equally. 
+        With InquAIry, he provided a reliable learning assistant integrated with course content, enabling students to self-learn and ask questions through LINE anytime.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Card: Jenny Wu -->
+  <div class="card" style="flex: 1 1 300px; max-width: 360px; min-height: 200px; display: flex; flex-direction: column; justify-content: space-between; background-color: #ffffff; border-left: 5px solid #1a3c74; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.06);">
+  <div class="stars" style="color:#f4d35e; font-size:1.2rem;">★★★★★</div>
+  <p style="margin: 0.5rem 0; font-style: italic; color: #444;">"I used InquAIry for midterm review — it clarified all my key concepts."</p>
+  <div class="user-name" style="font-weight:bold; color:#1a3c74;">Jenny Wu, 20</div>
+  <div class="user-role" style="font-size: 0.9rem; color: #666;">Undergraduate Student</div>
+  <button onclick="document.getElementById('modal-jenny').style.display='block'" style="margin-top: 1rem; background-color: #1a3c74; color: white; border: none; padding: 0.5rem 1rem; border-radius: 5px; cursor: pointer;">View Full Story</button>
+</div>
+
+<!-- Modal: Jenny -->
+<div id="modal-jenny" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.5); z-index:1000;">
+  <div style="background:#fff; max-width:550px; margin:5% auto; padding:2rem; border-radius:10px; position:relative;">
+    <span onclick="document.getElementById('modal-jenny').style.display='none'" style="position:absolute; top:10px; right:15px; font-size:1.2rem; cursor:pointer;">&times;</span>
+    <div style="font-size: 1.25rem; font-weight: bold; color: #1a3c74;">🎓 Jenny Wu, 20</div>
+    <div style="color: #1a1a1a; font-weight: 600;">Undergraduate Student</div>
+    <p style="margin-top: 0.5rem; font-style: italic; color: #444;">"I used InquAIry for midterm review — it clarified all my key concepts."</p>
+    <div style="margin-top: 1rem;">
+      <strong style="color:#1a3c74;">Pain Points</strong>
+      <ul style="margin: 0.3rem 0 0 1.2rem; color: #1a1a1a;">
+        <li>❌ No one to ask after class hours</li>
+        <li>❌ ChatGPT often gives vague answers</li>
+      </ul>
+    </div>
+    <div style="margin-top: 1rem;">
+      <strong style="color:#1a3c74;">Why InquAIry?</strong>
+      <ul style="margin: 0.3rem 0 0 1.2rem; color: #1a1a1a;">
+        <li>✅ LMS-integrated chatbot</li>
+        <li>✅ Answers tied to course content</li>
+        <li>✅ Available before exams and deadlines</li>
+      </ul>
+      <strong style="color:#1a3c74;">Full Story</strong>
+      <p style="margin-top: 1rem; color: #1a1a1a; line-height: 1.6;">
+        Jenny is a business major struggling with midterm prep. Without direct TA support, she often relied on ChatGPT but found answers too vague. 
+        InquAIry, connected to her LMS and course slides, provided exact definitions and examples to help her study effectively and boost her confidence.
+      </p>
+    </div>
+  </div>
+</div>
+
+  <div class="card" style="flex: 1 1 300px; max-width: 360px; min-height: 200px; display: flex; flex-direction: column; justify-content: space-between; background-color: #ffffff; border-left: 5px solid #1a3c74; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.06);">
+  <div>
+    <div style="font-size: 2rem;">📝</div>
+    <h3 style="color: #1a3c74; margin-top: 0.75rem;">Share Your Story</h3>
+    <p style="color: #1a1a1a; font-size: 0.95rem; margin: 0.75rem 0;">Tell us how InquAIry helped your learning or training journey.</p>
+  </div>
+  <a href="https://forms.gle/CAxxJkz5PRNkdoUL9" target="_blank"
+     style="margin-top: 1rem; background-color: #f4d35e; color: #1a1a1a; padding: 0.6rem 1.25rem; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 0.95rem; text-align: center">
+    Write a Review
+  </a>
+</div>
+
+
+    <!-- # -->
+
+
+<section id="pricing">
+  <h2 style="text-align: center; color: #1a3c74;">Pricing Plans</h2>
+  <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; padding-top: 2rem;">
+
+    <!-- Freemium Tier -->
+    <div style="flex: 1; min-width: 300px; max-width: 350px; background: #ffffff; border: 3px solid #f4d35e; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); padding: 2rem; display: flex; flex-direction: column; justify-content: space-between;">
+      <div>
+        <div style="font-size: 2rem; color: #f4d35e; text-align: center; margin-bottom: 1rem;">🎒</div>
+        <h3 style="color: #1a3c74; text-align: center;">Freemium Tier (Basic)</h3>
+        <ul style="color: #1a1a1a; font-size: 0.95rem; line-height: 1.6; margin-top: 1rem; padding-left: 1.2rem;">
+          <li>Free with 50 queries/month</li>
+          <li>Optional add-ons at $0.10/query</li>
+          <li>Ideal for students and individual users</li>
+          <li>Basic chatbot + limited analytics</li>
+        </ul>
       </div>
-      <div class="card">
-        <div class="stars">★★★★☆</div>
-        <p>We integrated InquAIry into our onboarding program and saw much better engagement.</p>
-        <div class="user-name">Emily Chen</div>
-        <div class="user-role">HR Manager, TechCorp</div>
-      </div>
-      <div class="card">
-        <div class="stars">★★★★★</div>
-        <p>Super helpful for exam review and concept clarification. Easy to use and reliable!</p>
-        <div class="user-name">Leo Wang</div>
-        <div class="user-role">Undergraduate Student</div>
+      <div style="text-align: center; margin-top: 1.5rem;">
+        <button style="background-color: #f4d35e; color: #1a3c74; padding: 0.5rem 1rem; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">
+          Learn More
+        </button>
       </div>
     </div>
-  </section>
 
-  <section id="stories">
-    <h2>User Stories</h2>
-    <div class="stories">
-      <div class="card">
-        <h3>University Integration</h3>
-        <p>ABC University used InquAIry in business courses, cutting professor Q&A time by 50% and improving student satisfaction.</p>
+    <!-- Premium Tier -->
+    <div style="flex: 1; min-width: 300px; max-width: 350px; background: #ffffff; border: 3px solid #f4d35e; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); padding: 2rem; display: flex; flex-direction: column; justify-content: space-between;">
+      <div>
+        <div style="font-size: 2rem; color: #f4d35e; text-align: center; margin-bottom: 1rem;">🏫</div>
+        <h3 style="color: #1a3c74; text-align: center;">Premium Tier (Institutional)</h3>
+        <ul style="color: #1a1a1a; font-size: 0.95rem; line-height: 1.6; margin-top: 1rem; padding-left: 1.2rem;">
+          <li>$5,000/year for education</li>
+          <li>$7,500/year for corporate</li>
+          <li>Up to 500 users</li>
+          <li>Custom knowledge base and API</li>
+          <li>Priority support + advanced analytics</li>
+        </ul>
       </div>
-      <div class="card">
-        <h3>Enterprise Training</h3>
-        <p>XYZ Corp deployed InquAIry for compliance training and reduced onboarding time by 30% within 2 months.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <div class="contact">
-      <div class="card">
-        <p>If you're interested in partnership, collaboration, or have any questions, feel free to reach out to us at:</p>
-        <p><strong>Email:</strong> inquairy.ai@gmail.com</p>
-        <p><strong>Phone:</strong> +886-2-1234-5678</p>
+      <div style="text-align: center; margin-top: 1.5rem;">
+        <button style="background-color: #f4d35e; color: #1a3c74; padding: 0.5rem 1rem; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">
+          Learn More
+        </button>
       </div>
     </div>
-  </section>
 
-  <footer>
+    <!-- Enterprise Tier -->
+    <div style="flex: 1; min-width: 300px; max-width: 350px; background: #ffffff; border: 3px solid #f4d35e; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); padding: 2rem; display: flex; flex-direction: column; justify-content: space-between;">
+      <div>
+        <div style="font-size: 2rem; color: #f4d35e; text-align: center; margin-bottom: 1rem;">💼</div>
+        <h3 style="color: #1a3c74; text-align: center;">Enterprise Tier (Custom)</h3>
+        <ul style="color: #1a1a1a; font-size: 0.95rem; line-height: 1.6; margin-top: 1rem; padding-left: 1.2rem;">
+          <li>Starting at $20,000/year</li>
+          <li>Fully customized knowledge base</li>
+          <li>Private hosting + 24/7 enterprise support</li>
+          <li>Unlimited usage and users</li>
+          <li>Advanced fine-tuning and analytics</li>
+        </ul>
+      </div>
+      <div style="text-align: center; margin-top: 1.5rem;">
+        <button style="background-color: #f4d35e; color: #1a3c74; padding: 0.5rem 1rem; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">
+          Learn More
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="faq" style="max-width: 800px; margin: 3rem auto;">
+  <h2 style="text-align: center; color: #1a3c74; margin-bottom: 2rem;">Frequently Asked Questions</h2>
+
+  <div class="faq-item" style="border-bottom: 1px solid #ddd; padding: 1rem 0;">
+    <button class="accordion" onclick="toggleFAQ(this)" style="background: none; border: none; font-size: 1.1rem; font-weight: bold; width: 100%; text-align: left; cursor: pointer; color: #1a3c74; display: flex; justify-content: space-between; align-items: center;">
+      <span>What makes InquAIry different from other AI tools?</span>
+      <span class="arrow">&#x25BC;</span>
+    </button>
+    <div class="faq-answer" style="display: none; padding-top: 0.5rem; color: #333;">
+      InquAIry uses domain-specific knowledge and RAG to ensure trustworthy answers for educational and enterprise users.
+    </div>
+  </div>
+
+  <div class="faq-item" style="border-bottom: 1px solid #ddd; padding: 1rem 0;">
+    <button class="accordion" onclick="toggleFAQ(this)" style="background: none; border: none; font-size: 1.1rem; font-weight: bold; width: 100%; text-align: left; cursor: pointer; color: #1a3c74; display: flex; justify-content: space-between; align-items: center;">
+      <span>Can I use InquAIry for multiple subjects?</span>
+      <span class="arrow">&#x25BC;</span>
+    </button>
+    <div class="faq-answer" style="display: none; padding-top: 0.5rem; color: #333;">
+      Yes, you can customize the knowledge base for different academic or training domains.
+    </div>
+  </div>
+
+  <div class="faq-item" style="border-bottom: 1px solid #ddd; padding: 1rem 0;">
+    <button class="accordion" onclick="toggleFAQ(this)" style="background: none; border: none; font-size: 1.1rem; font-weight: bold; width: 100%; text-align: left; cursor: pointer; color: #1a3c74; display: flex; justify-content: space-between; align-items: center;">
+      <span>Does it support mobile devices?</span>
+      <span class="arrow">&#x25BC;</span>
+    </button>
+    <div class="faq-answer" style="display: none; padding-top: 0.5rem; color: #333;">
+      Absolutely! InquAIry can be accessed via web, mobile, and integrated into messaging apps.
+    </div>
+  </div>
+</section>
+
+<script>
+  function toggleFAQ(button) {
+    const answer = button.nextElementSibling;
+    const arrow = button.querySelector('.arrow');
+
+    const isOpen = answer.style.display === 'block';
+    answer.style.display = isOpen ? 'none' : 'block';
+    arrow.innerHTML = isOpen ? '&#x25BC;' : '&#x25B2;'; // ▼▲ 切換
+  }
+</script>
+
+
+
+
+
+
+<!-- Contact Us 區塊 -->
+
+<section id="faq">...</section>
+<hr style="border: none; border-top: 2px solid #f4d35e; margin: 0.5rem auto; width: 90%;" />
+<section id="contact" style="text-align: center; padding: 0.2rem 1rem;">
+  <h2 style="color: #1a3c74;">Contact Us</h2>
+  <p style="margin-top: 1rem;">If you're interested in partnership, collaboration, or have any questions, feel free to reach out to us at:</p>
+  <p><strong>Email:</strong> info@inquairy.ai</p>
+  <p><strong>Phone:</strong> +886-2-1234-5678</p>
+</section>
+
+<footer style="background-color: #fff; border-top: 2px solid #f4d35e; width: 100%;">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0.1rem; text-align: center;">
     &copy; 2025 InquAIry Team. All rights reserved.
-  </footer>
-</body>
-</html>
+  </div>
+</footer>
+
+

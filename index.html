@@ -94,10 +94,12 @@
     </div>
     <nav>
       <a href="#features">Features</a>
-      <a href="#faq">FAQ</a>
       <a href="#stories">Reviews</a>
-      <a href="#contact">Contact</a>
       <a href="#pricing">Pricing</a>
+      <a href="#demo">Demo</a>
+      <a href="#faq">FAQ</a>
+      <a href="#team">Developer</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
@@ -387,9 +389,8 @@
   </div>
 </section>
 
-
-
-<section id="faq" style="max-width: 800px; margin: 3rem auto;">
+<!-- FAQ block -->
+<section id="faq" style="width: 100%; max-width: 800px; margin: 3rem auto; padding: 0 2rem; box-sizing: border-box; clear: both;">
   <h2 style="text-align: center; color: #1a3c74; margin-bottom: 2rem;">Frequently Asked Questions</h2>
 
   <div class="faq-item" style="border-bottom: 1px solid #ddd; padding: 1rem 0;">
@@ -423,8 +424,9 @@
   </div>
 </section>
 
+<!-- Team member block -->
 <section id="team" style="padding: 3rem 2rem; background-color: #fff; overflow-x: hidden;">
-  <h2 style="text-align: center; color: #1a3c74; margin-bottom: 2rem;">Team Members</h2>
+  <h2 style="text-align: center; color: #1a3c74; margin-bottom: 2rem;">Developer</h2>
 
   <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; max-width: 1100px; margin: 0 auto;">
 
@@ -472,10 +474,9 @@
   function toggleFAQ(button) {
     const answer = button.nextElementSibling;
     const arrow = button.querySelector('.arrow');
-
     const isOpen = answer.style.display === 'block';
     answer.style.display = isOpen ? 'none' : 'block';
-    arrow.innerHTML = isOpen ? '&#x25BC;' : '&#x25B2;'; // ▼▲ 切換
+    arrow.innerHTML = isOpen ? '&#x25BC;' : '&#x25B2;'; // ▼▲
   }
 </script>
 
